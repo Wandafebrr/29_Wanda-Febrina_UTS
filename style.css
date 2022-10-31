@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar h2{
+    color: antiquewhite;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+}
+.navbar .nav-item a::before{
+    content: '';
+    position: absolute;
+    background:whitesmoke;
+    width: 0; 
+    height: 3px; 
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.navbar .nav-item a:hover::before{
+    width: 100%; 
+}
+.navbar ul li :hover{
+   font-weight:bolder;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content button{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #009688;
+    background: transparent;
+    
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+.content button a{
+  text-decoration: none;
+  color: #fff;
+}
+.content button:hover{
+    background: #00968775;
+    border: #00968775;
+}
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+      
+      .dd-button {
+        /* display: inline-block;
+        border: 1px solid gray;
+        border-radius: 4px; */
+        padding: 10px 30px 10px 20px;
+        /* background-color: #ffffff; */
+        color: white;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      /* untuk membuat panah ke bawah */
+      .dd-button:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid white;
+      }
+      .dd-button::before{
+        content: '';
+        position: absolute;
+        background:whitesmoke;
+        width: 0; 
+        height: 3px; 
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease;
+    }
+    .dd-button:hover::before{
+        width: 100%; 
+    } 
+      .dd-button:hover {
+        font-weight: bolder;
+        width: 100%; 
+      }
+      
+      .dd-input {
+        display: none;
+      }
+      
+      .dd-menu {
+        position: absolute;
+        top: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 0;
+        /* margin: 2px 0 0 0; */
+        box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+        background-color: #ffffffe4;
+      }
+      
+      .dd-input + .dd-menu { /*jika diklik baru muncul*/
+        display: none;
+      } 
+      
+      /* untuk memunculkan block */
+      .dd-input:checked + .dd-menu { 
+        display: block;
+
+      } 
+      
+      .dd-menu li {
+        padding: 10px 20px;
+        cursor: pointer;
+        /* white-space: nowrap; */
+      }
+      
+      .dd-menu li:hover {
+        background-color: #f6f6f6;
+      }
+      /* .dd-menu a{
+        color: black;
+      } */
+      td:hover{
+        opacity:60% ;
+    }
+.container{
+    width: 1400px;
+    margin: 20px 50px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+form{
+    width: 600px;
+}
+#email{
+    width: 350px; 
+    height:30px;
+    font-family:'Poppins';
+    font-weight: bolder;
+}
+#sub{
+margin-top: 10px;
+padding: 10px 30px;
+font-family: 'Verdana';
+font-weight: bolder;
+cursor: pointer;
+background-color: #de8f8f;
+border-radius: 10px;
+border: none;
+}
+#sub:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
+.subscribe{
+  background-color: #c5c6d5;
+  border-radius: 10px;
+  padding: 10px 150px;
+  width: 500px;
+  height: 220px;
+  margin: 0 50px;
+}
+.about img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  
+}
+.about{
+  /* margin-left: 50px; */
+  padding: 20px;
+  width:400px;
+  height: 200px;
+  background-color:white;
+  border-radius: 10px;
+  font-size: 10pt;
+  box-shadow: 1px 2px 3px 0px rgba(20,20,20,0.4);
+}
+.about h3{
+  margin-top: -30px;
+}
+#readmore{
+  width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #009688;
+    background: #009688;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+#readmore:hover{
+  background: #acaec3;
+  border: #acaec3;
+  color: black;
+}
+.cont1{
+  width: 1400px;
+  margin: 20px 50px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+.artc1, .artc2, .artc3{
+  padding: 20px;
+  width:400px;
+  height: 700px;
+  background-color:white;
+  border-radius: 30px;
+  font-size: 10pt;
+  box-shadow: 1px 2px 3px 0px rgba(20,20,20,0.4);
+  margin-right: 30px;
+}
+.cont1 img{
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+.journal{
+  font-family: 'Homemade Apple';
+  text-align: center;
+}
+.artc1 a, .artc2 a, .artc3 a{
+  text-decoration: none;
+  color:#009688;
+}
+.artc1 a:hover, .artc2 a:hover, .artc3 a:hover{
+  font-weight: bolder;
+}
+.isikontak-1{
+  font-family: 'Poppins';
+  text-align: center;
+  font-size: 14pt;
+  background-color: #2C323B;
+  color: white;
+  padding: 5px;
+  margin-bottom: 0;
+  
+}
+.sosmed a{
+  text-align: center;
+  color: #8F99B6;
+  width: 50px;
+  text-decoration: none;
+}
+.sosmed a.fa{
+  font-size: large;
+  
+}
+#grey{
+  text-decoration: none;
+  color: #bac1d7;
+  font-weight: bolder;
+}

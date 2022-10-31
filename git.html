@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@300&family=Poppins:wght@200&family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+    </header>
+        <div class="git">
+        <div class="navbar">
+            <h2 style="font-family:'Verdana';">Journey.</h2>
+            <div class="nav-item">
+                <ul>
+                 <li><a href="journey.html">Home</a></li>
+                 <li><a href="about.html">About Me</a></li>
+                 <label class="dropdown">
+                     <div class="dd-button">
+                       Categories
+                     </div>
+                     <input type="checkbox" class="dd-input">
+                     <ul class="dd-menu" >
+                       <li><a href="travels.html" style="color: black;">Travels</a></li>
+                       <hr style="width:70% ;">
+                       <li><a href="concert.html" style="color: black;">Concert</a>
+                         </li>
+                     </ul>
+                   </label>
+                 <li><a href="gallery.html">Gallery</a></li>
+             </ul>
+             </div>
+        </div>
+        <div class="content3">
+            <h2>Get In Touch</h2>
+            <br>
+            <p>Let's knowing each other by get in touch. You can send anything through the box below. It can be critics, suggestions, or another story like your experiences.
+                I always waiting your message especially the critics and suggestions, because it can help me to improve this website. The last but not least, all of your
+                message become a feedback to me. Hope you enjoy and feel fan when visit or reading this website. XOXO!!
+            </p>
+            <br>
+            <h3 id="top-form"><b>Send me a message</b></h3>
+            <div class="feedback">
+               <form id="feedbackform" onsubmit="return validateForm()" method="get">
+                <div class="fields">
+                    <div class="input-field">
+                        <label>Your Name (Required)</label>
+                        <input type="text" name="nama" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Your Email (Required)</label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-field">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="Fill with subject">
+                    </div>
+                    <div class="input-field">
+                        <label>Your Message</label>
+                        <br>
+                        <textarea type="text" name="pesan" id="message" placeholder="Type here for special message"></textarea>
+                    </div>
+                <!-- /<label for="email">Email address : </label>
+                <input type="email" name="email" id="email" placeholder=" Enter your email"> type email supaya muncul alert -->
+                    <button id="send" type="submit">SEND</button>
+            </form> 
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        // validation form
+        function validateForm(){
+         var nama=document.forms["feedbackform"]["nama"].value;
+         var email=document.forms["feedbackform"]["email"].value;
+         var subject=document.forms["feedbackform"]["subject"].value;
+         var pesan=document.forms["feedbackform"]["pesan"].value;
+ 
+         if(nama !='' && email!=''&& subject!=''&& pesan!=''){
+             alert('Your massage will sending! Thank you for your feedback');
+        }
+     }
+
+     </script>
+</body>
+</html>
